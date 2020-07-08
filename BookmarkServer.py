@@ -99,8 +99,8 @@ class Shortener(http.server.BaseHTTPRequestHandler):
             self.wfile.write(
                 "Couldn't fetch URI '{}'. Sorry!".format(longuri).encode())
 
-    class ThreadHTTPServer(ThreadingMixIn, http.server.HTTPServer):
-        "This is an HTTPServer that supports thread-based concurrency."
+class ThreadHTTPServer(ThreadingMixIn, http.server.HTTPServer):
+    "This is an HTTPServer that supports thread-based concurrency."
 
 if __name__ == '__main__':
     server_address = ('', int(os.environ.get('PORT', '8000')))
