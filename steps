@@ -1,0 +1,51 @@
+ 2644  mkdir realWorldHTTP
+ 2645  cd realWorldHTTP
+ 2646  vim BookmarkServer.py
+ 2647  git init
+ 2648  ls
+ 2649  git status
+ 2650  git add -A
+ 2651  git commit -m 'Checking in my bookmark server!'
+ 2652  brew tap heroku/brew && brew install heroku
+ 2653  heroku login
+ 2654  cat ~/.netrc
+ 2655* python
+ 2656* requests -V
+ 2657* cd Desktop/Udacity/HTTPWebServer/
+ 2658* history | grep requests
+ 2659* pip3 show requests | grep Version
+ 2660  ls
+ 2661  vim runtime.txt
+ 2662  vim requirements.txt
+ 2663  vim Procfile
+ 2664  git status
+ 2665  git add -A
+ 2666  git commit -m 'Checking in cofig files'
+ 2667  git remote add origin https://github.com/shahjuhi1108/HTTPinRealWorld.git
+ 2668  git push -u origin master
+ 2669  cat runtime.txt
+ 2670  cat requirements.txt
+ 2671  cat Procfile
+ 2672  vim BookmarkServer.py
+ 2673  git status
+ 2674* cd ../../../Lesson-3
+ 2675* ls
+ 2676* cd 0_Deploying
+ 2677* ls
+ 2678* cd solution
+ 2679* python BookmarkServer.py
+ 2680  git status
+ 2681  git add -A
+ 2682  git commit -m 'Use PORT from environment'
+ 2683  git push
+ 2684* heroku create httprealworldapp
+Creating ⬢ httprealworldapp... done
+https://httprealworldapp.herokuapp.com/ | https://git.heroku.com/httprealworldapp.git 
+ 2685  git push heroku master
+ 2686  heroku git:remote -a httprealworldapp
+ 2687  git push heroku master
+
+Access https://httprealworldapp.herokuapp.com/
+
+
+Access server log at - https://dashboard.heroku.com/apps/httprealworldapp/logs
